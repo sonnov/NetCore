@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicInfo", "BasicInfo.csproj", "{F653BCC1-9F25-4F18-852C-DBAF50A72B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDiExample", "..\SimpleDiExample\SimpleDiExample.csproj", "{7074A6CA-E5D4-4AD0-A75A-C56446B038CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleDiExample", "..\SimpleDiExample\SimpleDiExample.csproj", "{7074A6CA-E5D4-4AD0-A75A-C56446B038CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
