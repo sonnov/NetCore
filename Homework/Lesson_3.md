@@ -3,6 +3,7 @@
 2. Общая инфо про Controller: https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/actions?view=aspnetcore-3.1
 
 Практика:
+
 0. В вашем репозитории с ДЗ содайте новый проект по шаблону MVC и скопируйте туда модель  News и статический класс NewsBase из моего проекта. Создайте NewsController.
 1. В контроллер NewsController добавьте action Index, при его вызове должны вывестись все News из NewsBase в виде HTML таблицы. 
 2. Вынесите таблицу из прошлого задания в отдельную секцию. С помощью @RenderSection добавьте эту секцию в _Layout. 
