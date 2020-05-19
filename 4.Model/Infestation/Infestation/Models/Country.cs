@@ -9,7 +9,6 @@ namespace Infestation.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        //public int WorldPartId { get; set; }
         public int Population { get; set; }
         public int SickCount { get; set; }
         public int DeadCount { get; set; }
