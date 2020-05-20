@@ -4,5 +4,5 @@ cache:
     - packages -> **\packages.config
 before_build: nuget restore
 build: 
-    project: 1.Introduction/Introduction/Introduction.csproj.user
+    project: 1.Introduction/Introduction/Introduction.csproj
     publish_wap: true
