@@ -2,7 +2,14 @@ version: 1.0.0-{build}
 configuration: Release
 cache: 
     - packages -> **\packages.config
-before_build: nuget restore 1.Introduction/Introduction
+environment:
+    matrix:
+    - project_folder: 3.BasicInfo/BasicInfo
+      project_name: BasicInfo.csproj 
+     
+    - project_folder: 1.Introduction/Introduction
+      project_name: Introduction.csproj
+before_build: nuget restore %project_folder%
 build: 
-    project: 1.Introduction/Introduction/Introduction.csproj
+    project: %project_folder%/%project_name%
     publish_wap: true
