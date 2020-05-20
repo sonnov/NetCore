@@ -2,7 +2,7 @@ version: 1.0.0-{build}
 configuration: Release
 cache: 
     - packages -> **\packages.config
-before_build: nuget restore
+before_build: nuget restore 1.Introduction/Introduction
 build: 
     project: 1.Introduction/Introduction/Introduction.csproj
     publish_wap: true
