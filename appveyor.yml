@@ -10,10 +10,10 @@ environment:
     - project_folder: 3.BasicInfo/BasicInfo
       project_name: BasicInfo.csproj 
     
-    - project_folder: 3.BasicInfo\SimpleDiExample
+    - project_folder: 3.BasicInfo/SimpleDiExample
       project_name: SimpleDiExample.csproj
 
-    - project_folder: 4.Model\Infestation\Infestation\
+    - project_folder: 4.Model/Infestation/Infestation
       project_name: Infestation.csproj
 
 before_build: nuget restore %project_folder%
