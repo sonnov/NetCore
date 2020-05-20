@@ -11,5 +11,5 @@ environment:
       project_name: Introduction.csproj
 before_build: nuget restore %project_folder%
 build: 
-    project: %project_folder%/%project_name%
+    project: '%project_folder%/%project_name%'
     publish_wap: true
