@@ -1,0 +1,8 @@
+version: 1.0.0-{build}
+configuration: Release
+cache: 
+    - packages -> **\packages.config
+before_build: nuget restore
+build: 
+    project: 1.Introduction/Introduction/Introduction.csproj.user
+    publish_wap: true
