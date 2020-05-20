@@ -4,19 +4,19 @@ cache:
     - packages -> **\packages.config
 environment:
     matrix:
-    - project_folder: 1.Introduction/Introduction
-      project_name: Introduction.csproj
+    - solution_folder: 1.Introduction/Introduction
+      full_project_name: Introduction.csproj
       
-    - project_folder: 3.BasicInfo/BasicInfo
-      project_name: BasicInfo.csproj 
+    - solution_folder: 3.BasicInfo/BasicInfo
+      full_project_name: BasicInfo.csproj 
     
-    - project_folder: 3.BasicInfo/SimpleDiExample
-      project_name: SimpleDiExample.csproj
+    - solution_folder: 3.BasicInfo/BasicInfo
+      full_project_name: SimpleDiExample.csproj
 
-    - project_folder: 4.Model/Infestation/Infestation
-      project_name: Infestation.csproj
+    - solution_folder: 4.Model/Infestation
+      full_project_name: Infestation.csproj
 
-before_build: nuget restore %project_folder%
+before_build: nuget restore %solution_folder%
 build: 
-    project: '%project_folder%/%project_name%'
+    project: '%full_project_name%'
     publish_wap: true
