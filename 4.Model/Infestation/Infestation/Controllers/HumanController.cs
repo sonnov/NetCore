@@ -1,5 +1,6 @@
 ﻿using Infestation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,23 @@ namespace Infestation.Controllers
 {
     public class HumanController : Controller
     {
-        public IActionResult Index()
+        private InfestationContext _context { get; set; }
+
+        public HumanController(InfestationContext context)
         {
-            return BadRequest();
+            _context = context;
+        }
+
+        public IActionResult Index(int id)
+        {
+            ViewData["human"] = _context.Humans.SingleOrDefault(human => human.Id == id);
+            return View();
+        }
+
+        public IActionResult Country(int humanId)
+        {
+            ViewData["countryName"] = _context.Humans.SingleOrDefault(human => human.Id == humanId).Country.Name;
+            return View();
         }
     }
 }
